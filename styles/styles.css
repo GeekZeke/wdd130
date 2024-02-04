@@ -1,9 +1,36 @@
+
 body{
-    background-color: #FEECD8;
+    
 }
 
 a{
     padding: 10px;
     color: #b52c45d3;
     font-size: 1.3em;
+}
+img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#content {
+    max-width: 2000px;
+    background-color: #FEECD8;
+    margin: 0 auto;
+
+}
+nav a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a:hover {
+    padding-top: 30px;
+    color: #D8FEEC;
+}
+footer a:hover {
+    padding: 200px;
 }
