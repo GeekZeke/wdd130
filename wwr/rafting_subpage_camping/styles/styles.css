@@ -1,0 +1,140 @@
+/* General Styles */
+body, html {
+    max-width: 1440px;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.book-now {
+    background-image: url('images/book_now_button');
+}
+
+
+/* Mountainscape Section */
+#mountainscape .image-container{
+    position: relative;
+    max-width: 100%;
+}
+
+#mountainscape img#landing-img{
+    width: 100%;
+}
+
+#mountainscape .book-now-image {
+    width: 10%;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Camping Made Easy Section */
+#camping-easy {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fdf6ea;
+    height: 480px;
+}
+
+#camping-easy .text-container{
+    flex: 1;
+    grid-column: 1;
+}
+
+#camping-easy img {
+    width: 100%%;
+    grid-column: 2;
+    
+    
+}
+
+#camping-easy .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Summer Deals Promo Section */
+#summer-deals .packages {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: #504128;
+}
+
+.package-info-1 {
+    position: absolute;
+    bottom: 60px; /* Adjust based on your needs */
+    background-color: rgba(255,255,255,0.8); /* Semi-transparent background */
+    width: 100%;
+    padding: 10px;
+}
+
+.package-info button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: image('images/book_now_button');
+}
+
+.package_1, .package_2, .package_3 {
+    position: relative;
+    margin: 20px;
+}
+
+/* Reviews Section */
+.review-images p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Adjust based on your needs */
+    color: #000000; /* Assuming white text for visibility */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+#reviews_from_you{
+    width: 100%;
+}
+
+.review_1, .review_2, .review_3 {
+    position: relative;
+    margin: 20px;
+}
+
+/* Contact Us Section */
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #504128;
+}
+
+#contact img {
+    flex: 1;
+}
+
+.contact-headers, .contact-info {
+    flex: 1;
+}
